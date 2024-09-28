@@ -4,11 +4,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../dist/output.css" rel="stylesheet">
-    <title>Design</title>
+    <title>Dentino Clinic</title>
 </head>
-<body>
-    <h1 class="text-3xl font-bold underline text-red-500 hover:text-blue-500">
-        Hello, Tailwind CSS!
-    </h1>
+<body class="bg-white font-sans">
+    <!-- Navbar -->
+    <nav class="bg-blue-700 text-white px-4 py-3 flex justify-between items-center">
+        <div class="flex items-center space-x-4">
+            <span class="text-2xl font-bold">Dentino</span>
+            <div class="hidden md:flex space-x-6">
+                <a href="#" class="hover:text-blue-300">Home</a>
+                <a href="#" class="hover:text-blue-300">Services</a>
+                <a href="#" class="hover:text-blue-300">About</a>
+                <a href="#" class="hover:text-blue-300">Pricing</a>
+                <a href="#" class="hover:text-blue-300">Contact</a>
+            </div>
+        </div>
+        <button id="menu-toggle" class="md:hidden text-white focus:outline-none focus:text-gray-200">
+            ☰
+        </button>
+        <div id="mobile-menu" class="hidden md:hidden absolute top-16 left-0 w-full bg-blue-800 py-4 px-6">
+            <a href="#" class="block py-2 text-white hover:text-blue-300">Home</a>
+            <a href="#" class="block py-2 text-white hover:text-blue-300">Services</a>
+            <a href="#" class="block py-2 text-white hover:text-blue-300">About</a>
+            <a href="#" class="block py-2 text-white hover:text-blue-300">Pricing</a>
+            <a href="#" class="block py-2 text-white hover:text-blue-300">Contact</a>
+        </div>
+        <a href="#" class="hidden md:inline-block bg-white text-blue-700 px-4 py-2 rounded hover:bg-blue-200">Book Now</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="text-center py-12 bg-blue-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <h1 class="text-4xl font-bold text-blue-700">Find a doctor & book online</h1>
+            <p class="mt-4 text-gray-600">We provide the best services to take care of your dental health.</p>
+            <button class="mt-6 px-8 py-3 bg-blue-700 text-white rounded hover:bg-blue-800">Book an Appointment</button>
+        </div>
+    </section>
+
+    <!-- Make an Appointment Section -->
+    <section class="py-12">
+        <div class="max-w-6xl mx-auto px-4 flex flex-wrap md:flex-nowrap">
+            <div class="w-full md:w-1/2 p-4">
+                <h2 class="text-3xl font-bold text-blue-700">Make an Appointment</h2>
+                <p class="mt-2 text-gray-600">Get in touch to book your consultation today.</p>
+                <button class="mt-4 px-8 py-3 bg-blue-700 text-white rounded hover:bg-blue-800">Create an Appointment</button>
+            </div>
+            <div class="w-full md:w-1/2 p-4 flex items-center justify-center">
+                <div class="w-60 h-60 bg-gray-300 rounded-lg"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-12 bg-blue-50">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-blue-700">Our Services</h2>
+            <div class="mt-8 flex flex-wrap justify-center gap-4">
+                <div class="w-60 h-40 bg-gray-300 rounded-lg p-4">Dental Implants</div>
+                <div class="w-60 h-40 bg-gray-300 rounded-lg p-4">Teeth Whitening</div>
+                <div class="w-60 h-40 bg-gray-300 rounded-lg p-4">Pediatric Dentistry</div>
+                <div class="w-60 h-40 bg-gray-300 rounded-lg p-4">Orthodontics</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="py-12">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-blue-700">Pricing Plans</h2>
+            <div class="mt-8 flex flex-wrap justify-center gap-4">
+                <div class="w-60 h-40 bg-white border border-gray-200 rounded-lg p-4">
+                    <h3 class="text-xl font-semibold">All Physicians</h3>
+                    <p class="text-gray-600">$900</p>
+                </div>
+                <div class="w-60 h-40 bg-white border border-blue-700 rounded-lg p-4">
+                    <h3 class="text-xl font-semibold text-blue-700">Doctor Visits</h3>
+                    <p class="text-blue-700">$150</p>
+                </div>
+                <div class="w-60 h-40 bg-white border border-gray-200 rounded-lg p-4">
+                    <h3 class="text-xl font-semibold">Urgent Care</h3>
+                    <p class="text-gray-600">$250</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-700 text-white py-8 mt-12">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p>&copy; 2024 Dentino Clinic. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle mobile menu
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>
