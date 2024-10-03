@@ -11,6 +11,7 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <title>Dentino Clinic</title>
+    <link rel="stylesheet" href="startscreen.css">
     <style>
         body {
             font-family: 'Fredoka', sans-serif;
@@ -19,6 +20,14 @@
 </head>
 
 <body class="bg-white font-sans">
+
+    <div id="welcome-screen">
+        <img src="dein-logo.png" alt="Logo" id="logo">
+    </div>
+
+    <div id="main-content" style="display: none;">
+
+    
     <!-- Top Info Bar -->
     <div class="border border-b-2 border-b-gray-300/40 py-2 h-20 sticky top-0 z-50 bg-white">
         <div class="max-w-6xl mx-auto px-4 flex justify-between items-center h-full">
@@ -226,6 +235,7 @@
             &copy; 2024 YooLink Template All rights reserved.
         </div>
     </footer>
+</div>
 
 
     <script>
@@ -237,6 +247,8 @@
             mobileMenu.classList.toggle('hidden');
         });
     </script>
+
+    <script src="startscreen.js"></script>
 </body>
 
 </html>
