@@ -10,7 +10,7 @@ window.onload = function() {
         setTimeout(() => {
             welcomeScreen.style.display = 'none';
             mainContent.style.display = 'block';
-        }, 2500); // Zeit für den Fade-Out (2.5 Sekunden)
-    }, 500); // Wartezeit, bevor der Fade-Out beginnt (0.5 Sekunden)
+        }, 1300); // Zeit für den Fade-Out (2.5 Sekunden)
+    }, 1200); // Wartezeit, bevor der Fade-Out beginnt (0.5 Sekunden)
 };
 
