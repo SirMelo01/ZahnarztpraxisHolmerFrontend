@@ -18,6 +18,8 @@ body, html {
     transition: opacity 1.0s ease;
 }
 
+
+
 #logo {
     width: 300px; /* Logo-Größe anpassen */
     opacity: 0;

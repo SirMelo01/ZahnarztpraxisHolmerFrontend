@@ -13,47 +13,54 @@
         rel="stylesheet">
     <title>Dentino Clinic</title>
     <link rel="stylesheet" href="startscreen.css">
+    <link rel="stylesheet" href="css/style.css">
     <style>
         body {
             font-family: 'Fredoka', sans-serif;
         }
     </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/img-comparison-slider@8/dist/index.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/img-comparison-slider@8/dist/styles.css" />
 </head>
 
 <body class="bg-white font-sans">
 
-    <div id="welcome-screen">
+    <div id="welcome-screen" class="z-50">
         <img src="../img/Logo/Logo_.png" alt="Logo" id="logo">
     </div>
 
-    <div id="main-content" style="display: none;">
-
+    <div id="main-content">
 
         <!-- Top Info Bar -->
-        <div class="border border-b-2 border-b-gray-300/40 py-2 h-20 sticky top-0 z-50 bg-white">
+        <div class="border border-b-2 border-b-gray-300/40 py-2 h-20 sticky top-0 z-40 bg-white">
             <div class="max-w-6xl mx-auto px-4 flex justify-between items-center h-full">
                 <div class="flex items-center space-x-2">
                     <img src="../img/Logo/Logo.png" alt="Logo" class="w-64 h-auto max-w-full max-h-40">
                 </div>
 
                 <div class="flex items-center space-x-6 text-sm text-gray-700">
-                    <div class="flex items-center space-x-2">
+                    <div class="flex items-center space-x-1">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="size-5 text-blue-500">
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                         </svg>
-                        Mon-Fri: 8 AM-8 PM
+                        <span>Mon-Fri: 8 AM-8 PM</span>
                     </div>
-                    <div class="flex items-center space-x-2">
+                    <div class="flex items-center space-x-1">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="size-5 text-blue-500">
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
                         </svg>
-                        +123 6897 8974
+                        <span>+123 6897 8974</span>
                     </div>
-                    <div class="flex items-center space-x-2">
+                    <div class="flex items-center space-x-1">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="size-5 text-blue-500">
                             <path stroke-linecap="round" stroke-linejoin="round"
@@ -61,7 +68,7 @@
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
                         </svg>
-                        LA, Vehicula Street, 58
+                        <span>Deggendorfer Str. 50A, 94447 Plattling</span>
                     </div>
                 </div>
             </div>
@@ -99,80 +106,248 @@
             <div
                 class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center md:items-start space-y-8 md:space-y-0 md:space-x-8">
                 <div class="flex-1 text-center md:text-left self-center">
-                    <h1 class="text-4xl md:text-5xl font-bold text-blue-700">Find a doctor & book online</h1>
-                    <p class="mt-4 text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in diam
-                        accumsan, aliquet justo mattis, posuere ex. Aliquam erat volutpat.</p>
+                    <h1 class="text-4xl md:text-5xl font-bold text-blue-700">Zahnarztpraxis Lorenz Holmer</h1>
+                    <p class="mt-10 text-gray-600">
+                        Herzlich willkommen in der Zahnarztpraxis Lorenz Holmer – Ihrer vertrauensvollen Adresse für
+                        moderne Zahnheilkunde in Ihrer Nähe. Wir bieten eine angenehme Atmosphäre, individuelle Beratung
+                        und schonende Behandlungen für die ganze Familie.
+                    </p>
                     <button
-                        class="mt-10 hidden md:inline-block text-sm bg-blue-600 hover:scale-105 text-white px-8 py-3 rounded-full shadow-md shadow-blue-500">Make
-                        an
-                        Appointment</button>
-                    <div class="mt-10 flex flex-wrap gap-4">
-                        <div class="bg-white shadow-lg rounded-lg p-4 flex flex-col items-start">
-                            <h4 class="text-lg font-bold">Our Services</h4>
-                            <p class="text-gray-600 text-sm mt-2">Lorem ipsum dolor sit amet, consectetur</p>
-                            <a href="#" class="mt-4 text-blue-700 hover:text-blue-800">→</a>
-                        </div>
-                        <div class="bg-white shadow-lg rounded-lg p-4 flex flex-col items-start">
-                            <h4 class="text-lg font-bold">We work</h4>
-                            <p class="text-gray-600 text-sm mt-2">Mon-Fri <strong>8 AM - 8 PM</strong></p>
-                            <a href="#" class="mt-4 text-blue-700 hover:text-blue-800">→</a>
-                        </div>
-                    </div>
+                        class="mt-10 hidden md:inline-block text-sm bg-blue-600 hover:scale-105 text-white px-8 py-3 rounded-full shadow-md shadow-blue-500">
+                        Termin vereinbaren
+                    </button>
+
                 </div>
                 <div class="flex-1">
-                    <img src="https://placehold.co/500x500" alt="Doctor" class="w-full rounded-lg shadow-md">
+                    <img src="../img/Bilder Shooting/IMG_4854.jpg" alt="Doctor" class="w-full rounded-lg shadow-md">
                 </div>
             </div>
         </section>
 
-        <!-- Make an Appointment Section -->
-        <section class="py-12">
-            <div class="max-w-6xl mx-auto px-4 flex flex-wrap md:flex-nowrap">
-                <div class="w-full md:w-1/2 p-4">
-                    <h2 class="text-3xl font-bold text-blue-700">Make an Appointment</h2>
-                    <p class="mt-2 text-gray-600">Get in touch to book your consultation today.</p>
-                    <button class="mt-4 px-8 py-3 bg-blue-700 text-white rounded hover:bg-blue-800">Create an
-                        Appointment</button>
+        <!-- Owner Section -->
+        <section id="owner">
+            <!-- Flex container -->
+            <div
+                class="container flex flex-col-reverse items-center px-6 mx-auto mt-10 space-y-0 md:space-y-0 md:flex-row md:space-x-12 space-x-0 mb-12">
+                <!-- Image -->
+                <div class="md:w-1/2 mt-5 md:mt-0">
+                    <img src="../img/Portrait/Portrait final .png" class="rounded-xl" alt="">
                 </div>
-                <div class="w-full md:w-1/2 p-4 flex items-center justify-center">
-                    <div class="w-60 h-60 bg-gray-300 rounded-lg"></div>
+                <!-- Right item -->
+                <div class="flex flex-col mb-32 space-y-12 md:w-1/2">
+                    <h2 class="max-w-sm md:max-w-none text-base text-center md:text-xl xl:text-3xl md:text-left italic">
+                        "Gesundheit beginnt im Mund"
+                    </h2>
+                    <p>Sie erwartet eine ausführliche Diagnostik und Beratung, ein umfassende Auswahl von
+                        Behandlungsmöglichkeiten und ein Ambiente und Service, der von unseren PatientInnen sehr
+                        geschätzt wird.
+                        So individuell wie Sie oder Ihr Kind sind, so individuell planen wir Ihre Behandlung. </p>
+                    <div class="flex justify-start items-center space-x-8">
+                        <div>
+                            <p class="text-black text-lg text-center lg:text-left">Dr. Lorenz Holmer</p>
+                            <p class="text-blue-600 text-lg text-center lg:text-left">Ihr Zahnarzt in Plattling
+                            </p>
+                        </div>
+                        <img class="w-56" src="../img/Unterschrift neu.png" alt="">
+                    </div>
+
+                    <div class="justify-center lg:justify-start flex">
+                        <a href="about-me"
+                            class="p-3 px-6 pt-2 mb-6 text-white bg-blue-600 rounded-full baseline hover:bg-blue-700">
+                            Über mich
+                        </a>
+                    </div>
                 </div>
+
             </div>
         </section>
+
+        <div class="w-full ">
+            <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 270" version="1.1"
+                xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+                        <stop stop-color="rgba(239, 246, 255, 1)" offset="0%"></stop>
+                        <stop stop-color="rgba(239, 246, 255, 1)" offset="100%"></stop>
+                    </linearGradient>
+                </defs>
+                <path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)"
+                    d="M0,162L60,148.5C120,135,240,108,360,121.5C480,135,600,189,720,184.5C840,180,960,117,1080,99C1200,81,1320,108,1440,126C1560,144,1680,153,1800,157.5C1920,162,2040,162,2160,166.5C2280,171,2400,180,2520,171C2640,162,2760,135,2880,103.5C3000,72,3120,36,3240,40.5C3360,45,3480,90,3600,126C3720,162,3840,189,3960,171C4080,153,4200,90,4320,54C4440,18,4560,9,4680,13.5C4800,18,4920,36,5040,45C5160,54,5280,54,5400,81C5520,108,5640,162,5760,162C5880,162,6000,108,6120,103.5C6240,99,6360,144,6480,135C6600,126,6720,63,6840,67.5C6960,72,7080,144,7200,180C7320,216,7440,216,7560,216C7680,216,7800,216,7920,207C8040,198,8160,180,8280,184.5C8400,189,8520,216,8580,229.5L8640,243L8640,270L8580,270C8520,270,8400,270,8280,270C8160,270,8040,270,7920,270C7800,270,7680,270,7560,270C7440,270,7320,270,7200,270C7080,270,6960,270,6840,270C6720,270,6600,270,6480,270C6360,270,6240,270,6120,270C6000,270,5880,270,5760,270C5640,270,5520,270,5400,270C5280,270,5160,270,5040,270C4920,270,4800,270,4680,270C4560,270,4440,270,4320,270C4200,270,4080,270,3960,270C3840,270,3720,270,3600,270C3480,270,3360,270,3240,270C3120,270,3000,270,2880,270C2760,270,2640,270,2520,270C2400,270,2280,270,2160,270C2040,270,1920,270,1800,270C1680,270,1560,270,1440,270C1320,270,1200,270,1080,270C960,270,840,270,720,270C600,270,480,270,360,270C240,270,120,270,60,270L0,270Z">
+                </path>
+            </svg>
+        </div>
 
         <!-- Services Section -->
-        <section class="py-12 bg-blue-50">
+        <section class=" bg-blue-50 -top-16 pb-10">
             <div class="max-w-6xl mx-auto px-4 text-center">
-                <h2 class="text-3xl font-bold text-blue-700">Our Services</h2>
-                <div class="mt-8 flex flex-wrap justify-center gap-4">
-                    <div class="w-60 h-40 bg-gray-300 rounded-lg p-4">Dental Implants</div>
-                    <div class="w-60 h-40 bg-gray-300 rounded-lg p-4">Teeth Whitening</div>
-                    <div class="w-60 h-40 bg-gray-300 rounded-lg p-4">Pediatric Dentistry</div>
-                    <div class="w-60 h-40 bg-gray-300 rounded-lg p-4">Orthodontics</div>
+                <!-- Title and Subtitle -->
+                <h2 class="text-4xl font-bold text-blue-700">Unsere Leistungen</h2>
+                <p class="mt-4 text-gray-600 text-lg">Der wichtigste Pfeiler der modernen Zahnmedizin ist die Vorbeugung
+                    von Krankheiten wie Karies oder Parodontitis. Hier sind einige unserer wesentlichen Leistungen, um
+                    Ihre Zahngesundheit zu gewährleisten.</p>
+            </div>
+
+            <!-- Services List -->
+            <div class="mt-12 max-w-6xl mx-auto px-4 space-y-12">
+
+                <!-- Service Item 1 - Bild links, Text rechts -->
+                <div class="flex flex-col md:flex-row items-center md:space-x-8">
+                    <div class="flex-1">
+                        <img src="../img/Bilder Shooting/LH_1.jpg" alt="Prophylaxe Bild"
+                            class="w-full rounded-xl shadow-md">
+                    </div>
+                    <div class="flex-1 bg-white rounded-xl shadow-xl p-6 mt-8 md:mt-0">
+                        <div class="flex items-center space-x-4 mb-4">
+                            <img src="../img/Icons Behandlungen/Prophylaxe.png" alt="Icon Prophylaxe" class="w-12 h-12">
+                            <h3 class="text-xl font-bold text-blue-700">Prophylaxe & Recall</h3>
+                        </div>
+                        <p class="text-gray-600">
+                            Der wichtigste Pfeiler der modernen Zahnmedizin ist die Vorbeugung von Krankheiten wie
+                            beispielsweise Karies oder Parodontitis. Neben einer ausgewogenen und zahngesunden Ernährung
+                            ist eine optimale Mundhygiene und regelmäßige professionelle Zahnreinigungen entscheidend
+                            für die lebenslange Zahngesundheit.
+                            <br><br>Gerne unterstützen wir Sie bei der Optimierung oder zeigen Ihnen oder Ihren Kindern,
+                            wie eine perfekte Mundhygiene aussieht.
+                        </p>
+                    </div>
                 </div>
+
+                <!-- Service Item 2 - Text links, Bild rechts -->
+                <div class="flex flex-col md:flex-row items-center justify-center md:space-x-8">
+                    <div class="flex-1 bg-white rounded-xl shadow-lg p-6 order-2 md:order-1 mt-8 md:mt-0">
+                        <div class="flex items-center space-x-4 mb-4">
+                            <img src="../img/Icons Behandlungen/Füllung.png" alt="Icon Composite" class="w-12 h-12">
+                            <h3 class="text-xl font-bold text-blue-700">Composite Restaurationen</h3>
+                        </div>
+                        <p class="text-gray-600">
+                            Der wichtigste Pfeiler der modernen Zahnmedizin ist die Vorbeugung von Krankheiten wie
+                            beispielsweise
+                            Karies oder Parodontitis. Neben einer ausgewogenen und zahngesunden Ernährung ist eine
+                            optimale Mundhygiene
+                            und regelmäßige professionelle Zahnreinigungen entscheidend für die lebenslange
+                            Zahngesundheit.
+                            <br><br>Gerne unterstützen wir Sie bei der Optimierung oder zeigen Ihnen oder Ihren Kindern,
+                            wie eine
+                            perfekte Mundhygiene aussieht.
+                        </p>
+                    </div>
+                    <div class="flex-1 flex order-1 md:order-2 justify-center items-center">
+                        <img-comparison-slider>
+                        <img class="rounded-xl h-80" slot="first" src="../img/Behandlungsfälle/Flg AM.png" />
+                        <img class="rounded-xl h-80" slot="second" src="../img/Behandlungsfälle/Flg Comp.png" />
+                        </img-comparison-slider>
+                    </div>
+                </div>
+
+
+                <!-- Service Item 3 - Bild links, Text rechts -->
+                <div class="flex flex-col md:flex-row items-center md:space-x-8">
+                    <div class="flex-1">
+                        <img src="../img/Behandlungsfälle/WF nachher.png" alt="Endodontie Bild"
+                            class="w-full rounded-xl shadow-md max-h-96">
+                    </div>
+                    <div class="flex-1 bg-white rounded-xl shadow-lg p-6 mt-8 md:mt-0">
+                        <div class="flex items-center space-x-4 mb-4">
+                            <img src="../img/Icons Behandlungen/Füllung.png" alt="Icon Endodontie" class="w-12 h-12">
+                            <h3 class="text-xl font-bold text-blue-700">Endodontie</h3>
+                        </div>
+                        <p class="text-gray-600">
+                            Der wichtigste Pfeiler der modernen Zahnmedizin ist die Vorbeugung von Krankheiten wie
+                            beispielsweise Karies oder Parodontitis. Neben einer ausgewogenen und zahngesunden Ernährung
+                            ist eine optimale Mundhygiene und regelmäßige professionelle Zahnreinigungen entscheidend
+                            für die lebenslange Zahngesundheit.
+                            <br><br>Gerne unterstützen wir Sie bei der Optimierung oder zeigen Ihnen oder Ihren Kindern,
+                            wie eine perfekte Mundhygiene aussieht.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Service Item 4 - Text links, Bild rechts -->
+                <div class="flex flex-col md:flex-row items-center md:space-x-8">
+                    <div class="flex-1 bg-white rounded-xl shadow-lg p-6 order-2 md:order-1 mt-8 md:mt-0">
+                        <div class="flex items-center space-x-4 mb-4">
+                            <img src="../img/Icons Behandlungen/Zahnersatz.png" alt="Icon Zahnersatz" class="w-12 h-12">
+                            <h3 class="text-xl font-bold text-blue-700">Zahnersatz</h3>
+                        </div>
+                        <p class="text-gray-600">
+                            Der wichtigste Pfeiler der modernen Zahnmedizin ist die Vorbeugung von Krankheiten wie
+                            beispielsweise Karies oder Parodontitis. Neben einer ausgewogenen und zahngesunden Ernährung
+                            ist eine optimale Mundhygiene und regelmäßige professionelle Zahnreinigungen entscheidend
+                            für die lebenslange Zahngesundheit.
+                            <br><br>Gerne unterstützen wir Sie bei der Optimierung oder zeigen Ihnen oder Ihren Kindern,
+                            wie eine perfekte Mundhygiene aussieht.
+                        </p>
+                    </div>
+                    <div class="flex-1 order-1 md:order-2">
+                        
+                        <img-comparison-slider>
+                        <img slot="first" class="rounded-xl" src="../img/Behandlungsfälle/Front vorher.png" />
+                        <img slot="second" class="rounded-xl" src="../img/Behandlungsfälle/Front nachher.jpeg" />
+                        </img-comparison-slider>
+                    </div>
+                </div>
+
+                <!-- Service Item 5 - Bild links, Text rechts -->
+                <div class="flex flex-col md:flex-row items-center md:space-x-8">
+                    <div class="flex-1">
+                        <img src="../img/Bilder Shooting/IMG_4996.jpg" alt="Bleaching Bild"
+                            class="w-full rounded-xl shadow-md">
+                    </div>
+                    <div class="flex-1 bg-white rounded-xl shadow-lg p-6 mt-8 md:mt-0">
+                        <div class="flex items-center space-x-4 mb-4">
+                            <img src="../img/Icons Behandlungen/PZR.png" alt="Icon Bleaching" class="w-12 h-12">
+                            <h3 class="text-xl font-bold text-blue-700">Bleaching</h3>
+                        </div>
+                        <p class="text-gray-600">
+                            Der wichtigste Pfeiler der modernen Zahnmedizin ist die Vorbeugung von Krankheiten wie
+                            beispielsweise Karies oder Parodontitis. Neben einer ausgewogenen und zahngesunden Ernährung
+                            ist eine optimale Mundhygiene und regelmäßige professionelle Zahnreinigungen entscheidend
+                            für die lebenslange Zahngesundheit.
+                            <br><br>Gerne unterstützen wir Sie bei der Optimierung oder zeigen Ihnen oder Ihren Kindern,
+                            wie eine perfekte Mundhygiene aussieht.
+                        </p>
+                    </div>
+                </div>
+
             </div>
         </section>
 
-        <!-- Pricing Section -->
-        <section class="py-12">
+        <!-- Unsere Praxis Section -->
+        <section class="py-16 bg-white">
             <div class="max-w-6xl mx-auto px-4 text-center">
-                <h2 class="text-3xl font-bold text-blue-700">Pricing Plans</h2>
-                <div class="mt-8 flex flex-wrap justify-center gap-4">
-                    <div class="w-60 h-40 bg-white border border-gray-200 rounded-lg p-4">
-                        <h3 class="text-xl font-semibold">All Physicians</h3>
-                        <p class="text-gray-600">$900</p>
-                    </div>
-                    <div class="w-60 h-40 bg-white border border-blue-700 rounded-lg p-4">
-                        <h3 class="text-xl font-semibold text-blue-700">Doctor Visits</h3>
-                        <p class="text-blue-700">$150</p>
-                    </div>
-                    <div class="w-60 h-40 bg-white border border-gray-200 rounded-lg p-4">
-                        <h3 class="text-xl font-semibold">Urgent Care</h3>
-                        <p class="text-gray-600">$250</p>
-                    </div>
-                </div>
+                <!-- Title -->
+                <h2 class="text-4xl font-bold text-blue-700">Unsere Praxis</h2>
+                <p class="mt-4 text-gray-600 text-lg">Ein Einblick in unsere modernen Praxisräume, in denen wir uns um
+                    Ihr Wohlbefinden kümmern.</p>
             </div>
+
+            <!-- Slider main container -->
+            <div class="swiper container mx-auto max-w-5xl mt-8">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide rounded-lg"><img src="../img/Behandlungszimmer/IMG_4766.jpg"
+                            alt="Praxis Bild 1" class="w-full h-[500px] object-cover rounded-lg shadow-md "></div>
+                    <div class="swiper-slide rounded-lg"><img src="../img/Bilder Shooting/IMG_5013.jpg"
+                            alt="Praxis Bild 2" class="w-full h-[500px] object-cover rounded-lg shadow-md"></div>
+                    <div class="swiper-slide rounded-lg"><img src="../img/Bilder Shooting/IMG_4947.jpg"
+                            alt="Praxis Bild 3" class="w-full h-[500px] object-cover rounded-lg shadow-md"></div>
+                    ...
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+
         </section>
+
+
 
         <!-- Footer -->
         <footer class="bg-blue-50 py-12">
@@ -188,17 +363,31 @@
                             sapien.
                         </p>
                         <div class="space-y-4">
-                            <div class="flex items-center space-x-2">
-                                <i class="fas fa-map-marker-alt text-blue-700"></i>
-                                <span>LA, Vehicula Street, 58</span>
+                            <div class="flex items-center space-x-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-5 text-blue-500">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                </svg>
+                                <span>Mon-Fri: 8 AM-8 PM</span>
                             </div>
-                            <div class="flex items-center space-x-2">
-                                <i class="fas fa-phone text-blue-700"></i>
+                            <div class="flex items-center space-x-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-5 text-blue-500">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+                                </svg>
                                 <span>+123 6897 8974</span>
                             </div>
-                            <div class="flex items-center space-x-2">
-                                <i class="fas fa-clock text-blue-700"></i>
-                                <span>Mon-Fri: <strong>8 AM - 8 PM</strong></span>
+                            <div class="flex items-center space-x-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-5 text-blue-500">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                                </svg>
+                                <span>Deggendorfer Str. 50A, 94447 Plattling</span>
                             </div>
                         </div>
                     </div>
@@ -247,16 +436,42 @@
 
 
     <script>
-        // Toggle mobile menu
+        // Mobile Menu Toggle
         const menuToggle = document.getElementById('menu-toggle');
         const mobileMenu = document.getElementById('mobile-menu');
 
         menuToggle.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
         });
+
+        // Swiper Slider
+        const swiper = new Swiper('.swiper', {
+            speed: 400,
+            spaceBetween: 100,
+            loop: true, // Aktiviert das endlose Swipen
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false, // Autoplay nach Benutzung der Buttons nicht deaktivieren
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+                clickable: true, // Bullets anklickbar machen
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            scrollbar: {
+                el: '.swiper-scrollbar',
+                draggable: true,
+            },
+        });
     </script>
 
+
     <script src="startscreen.js"></script>
+    <script src="scripts/script.js"></script>
 </body>
 
 </html>
