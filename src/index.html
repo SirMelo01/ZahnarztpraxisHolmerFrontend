@@ -24,8 +24,8 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/img-comparison-slider@8/dist/index.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/img-comparison-slider@8/dist/styles.css" />
+    <script defer src="scripts/img-comparison-slider.js"></script>
+    <link rel="stylesheet" href="css/img-comparison-slider.css" />
 </head>
 
 <body class="bg-white font-sans">
@@ -231,7 +231,7 @@
                             perfekte Mundhygiene aussieht.
                         </p>
                     </div>
-                    <div class="flex-1 flex order-1 md:order-2 justify-center items-center">
+                    <div class="flex-1 flex order-1 md:order-2 justify-center items-center p-8">
                         <img-comparison-slider>
                         <img class="rounded-xl h-80" slot="first" src="../img/Behandlungsfälle/Flg AM.png" />
                         <img class="rounded-xl h-80" slot="second" src="../img/Behandlungsfälle/Flg Comp.png" />
@@ -242,9 +242,11 @@
 
                 <!-- Service Item 3 - Bild links, Text rechts -->
                 <div class="flex flex-col md:flex-row items-center md:space-x-8">
-                    <div class="flex-1">
-                        <img src="../img/Behandlungsfälle/WF nachher.png" alt="Endodontie Bild"
-                            class="w-full rounded-xl shadow-md max-h-96">
+                    <div class="flex-1 flex justify-center items-center">
+                        <img-comparison-slider>
+                        <img slot="first" class="rounded-xl h-80" src="../img/Behandlungsfälle/WF nachher.png" />
+                        <img slot="second" class="rounded-xl h-80" src="../img/Behandlungsfälle/WF vorher.png" />
+                        </img-comparison-slider>
                     </div>
                     <div class="flex-1 bg-white rounded-xl shadow-lg p-6 mt-8 md:mt-0">
                         <div class="flex items-center space-x-4 mb-4">
@@ -279,10 +281,9 @@
                         </p>
                     </div>
                     <div class="flex-1 order-1 md:order-2">
-                        
                         <img-comparison-slider>
-                        <img slot="first" class="rounded-xl" src="../img/Behandlungsfälle/Front vorher.png" />
-                        <img slot="second" class="rounded-xl" src="../img/Behandlungsfälle/Front nachher.jpeg" />
+                        <img slot="first" class="rounded-xl" src="../img/Behandlungsfälle/Angepasst/Front vorher Kopie.jpg" />
+                        <img slot="second" class="rounded-xl" src="../img/Behandlungsfälle/Angepasst/Front nachher - Kopie.jpg" />
                         </img-comparison-slider>
                     </div>
                 </div>
