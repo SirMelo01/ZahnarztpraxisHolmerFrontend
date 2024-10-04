@@ -1,0 +1,18 @@
+#top-info-bar {
+  transition: top 0.3s ease-in-out;
+  position: relative;
+  z-index: 100; /* Ensure it's above nav when it appears */
+}
+
+nav {
+  transition: top 0.3s ease-in-out;
+  position: relative; /* Let nav stay in the document flow */
+  top: 0;
+  width: 100%; /* Full width */
+  z-index: 50;
+}
+
+#nav-logo {
+  transition: opacity 0.3s ease-in-out;
+  width: 180px;
+}

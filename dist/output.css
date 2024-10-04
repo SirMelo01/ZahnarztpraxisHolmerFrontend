@@ -706,10 +706,6 @@ video {
   height: 5rem;
 }
 
-.h-32 {
-  height: 8rem;
-}
-
 .h-80 {
   height: 20rem;
 }
@@ -724,10 +720,6 @@ video {
 
 .h-full {
   height: 100%;
-}
-
-.h-44 {
-  height: 11rem;
 }
 
 .max-h-40 {
