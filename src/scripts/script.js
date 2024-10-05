@@ -1,26 +1,28 @@
 $(document).ready(function () {
-    var lastScrollTop = 0;
-    var delta = 5; // Minimal scroll distance before the bar reacts
-    var navbarHeight = $('#top-info-bar').outerHeight();
+    const navbar = $('#top-info-bar')
+    let prevScrollPos = 0;
 
-    $(window).on('scroll', function () {
-        var scrollTop = $(this).scrollTop();
-
-        // Check if the user has scrolled enough
-        if (Math.abs(scrollTop - lastScrollTop) > delta) {
-            if (scrollTop > lastScrollTop) {
-                // User scrolls down
-                $('#top-info-bar').addClass('scrolled'); // Shrink the top bar
-            } else if (scrollTop < 30) {
-                // User scrolls back up
-                $('#top-info-bar').removeClass('scrolled'); // Reset the top bar size
-            }
-            lastScrollTop = scrollTop;
+    function updateNavbarState() {
+        // Get the new Value
+        const currentScrollPos = window.pageYOffset;
+    
+        if ((document.documentElement.scrollTop || document.body.scrollTop) === 0) {
+            // User has scrolled up to the top of the page
+            navbar.removeClass('scrolled');
+        } else {
+            navbar.addClass('scrolled');
         }
-    });
+
+        // Update the old value
+        prevScrollPos = currentScrollPos;
+    }
+
+    window.addEventListener('scroll', updateNavbarState);
 
     // Toggle mobile menu
     $('#menu-toggle').on('click', function () {
         $('#mobile-menu').toggleClass('hidden');
     });
 });
+
+
