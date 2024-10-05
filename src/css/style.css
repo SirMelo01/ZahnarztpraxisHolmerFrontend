@@ -1,18 +1,30 @@
 #top-info-bar {
-  transition: top 0.3s ease-in-out;
-  position: relative;
-  z-index: 100; /* Ensure it's above nav when it appears */
+  transition: top 0.3s ease-in-out, height 0.3s ease-in-out;
+  z-index: 100; /* Ensure it's above everything */
+  height: 8rem; /* Default height (start larger) */
 }
 
-nav {
-  transition: top 0.3s ease-in-out;
-  position: relative; /* Let nav stay in the document flow */
-  top: 0;
-  width: 100%; /* Full width */
-  z-index: 50;
+#top-info-bar.scrolled {
+  height: 4.5rem; /* Shrink height on scroll (a bit larger now) */
 }
 
-#nav-logo {
-  transition: opacity 0.3s ease-in-out;
-  width: 180px;
+#top-logo {
+  transition: width 0.3s ease-in-out;
+  width: 16rem; /* Larger default logo size */
+}
+
+#top-info-bar.scrolled #top-logo {
+  width: 12rem; /* Adjusted smaller logo size when scrolling */
+}
+
+#menu-toggle {
+  font-size: 2rem; /* Larger burger menu icon */
+}
+
+#mobile-menu {
+  font-size: 1.25rem; /* Increase font size of menu items */
+}
+
+#mobile-menu a {
+  padding: 1rem 0; /* Larger padding for better spacing */
 }
