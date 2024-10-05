@@ -36,51 +36,51 @@
 
     <div id="main-content">
 
-<!-- Top Info Bar (Kombinierte Navbar) -->
-<div id="top-info-bar" class="border-b-2 border-b-gray-300/40 py-4 h-28 sticky top-0 z-40 bg-white">
-    <div class="max-w-6xl mx-auto px-4 flex justify-between items-center h-full">
-        <div class="flex items-center space-x-2">
-            <img id="top-logo" src="../img/Logo/Logo.png" alt="Logo" class="w-56 h-auto max-w-full max-h-24">
+        <!-- Top Info Bar (Kombinierte Navbar) -->
+        <div id="top-info-bar" class="border-b-2 border-b-gray-300/40 py-4 h-28 sticky top-0 z-40 bg-white">
+            <div class="max-w-6xl mx-auto px-4 flex justify-between items-center h-full">
+                <div class="flex items-center space-x-2">
+                    <img id="top-logo" src="../img/Logo/Logo.png" alt="Logo" class="w-56 h-auto max-w-full max-h-24">
+                </div>
+
+                <!-- Menüpunkte -->
+                <div class="hidden md:flex items-center space-x-6 text-lg text-gray-700">
+                    <a href="#" class="hover:text-blue-600">Services</a>
+                    <a href="#" class="hover:text-blue-600">About</a>
+                    <a href="#" class="hover:text-blue-600">Pricing</a>
+                    <a href="#" class="hover:text-blue-600">Contact</a>
+                    <!-- Telefon Icon mit größerem Abstand -->
+                    <a href="tel:+1234567890" class="hover:text-blue-600 pl-20"> <!-- ml-8 für Abstand -->
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6 text-gray-700 hover:text-blue-600">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Burger Menu für Mobilgeräte -->
+                <button id="menu-toggle" class="md:hidden text-slate-900 focus:outline-none focus:text-gray-600">
+                    ☰
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden absolute top-12 left-0 w-full bg-white py-4 px-6">
+                <a href="#" class="block py-2 hover:text-blue-600">Services</a>
+                <a href="#" class="block py-2 hover:text-blue-600">About</a>
+                <a href="#" class="block py-2 hover:text-blue-600">Pricing</a>
+                <a href="#" class="block py-2 hover:text-blue-600">Contact</a>
+                <!-- Telefon Icon im Burger-Menü -->
+                <a href="tel:+1234567890" class="block py-2 hover:text-blue-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6 inline-block text-gray-700">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+                    </svg>
+                </a>
+            </div>
         </div>
-
-        <!-- Menüpunkte -->
-        <div class="hidden md:flex items-center space-x-6 text-lg text-gray-700">
-            <a href="#" class="hover:text-blue-600">Services</a>
-            <a href="#" class="hover:text-blue-600">About</a>
-            <a href="#" class="hover:text-blue-600">Pricing</a>
-            <a href="#" class="hover:text-blue-600">Contact</a>
-            <!-- Telefon Icon mit größerem Abstand -->
-            <a href="tel:+1234567890" class="hover:text-blue-600 pl-20"> <!-- ml-8 für Abstand -->
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" class="w-6 h-6 text-gray-700 hover:text-blue-600">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
-                </svg>
-            </a>
-        </div>
-
-        <!-- Burger Menu für Mobilgeräte -->
-        <button id="menu-toggle" class="md:hidden text-slate-900 focus:outline-none focus:text-gray-600">
-            ☰
-        </button>
-    </div>
-
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden md:hidden absolute top-12 left-0 w-full bg-white py-4 px-6">
-        <a href="#" class="block py-2 hover:text-blue-600">Services</a>
-        <a href="#" class="block py-2 hover:text-blue-600">About</a>
-        <a href="#" class="block py-2 hover:text-blue-600">Pricing</a>
-        <a href="#" class="block py-2 hover:text-blue-600">Contact</a>
-        <!-- Telefon Icon im Burger-Menü -->
-        <a href="tel:+1234567890" class="block py-2 hover:text-blue-600">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="w-6 h-6 inline-block text-gray-700">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
-            </svg>
-        </a>
-    </div>
-</div>
 
 
 
@@ -88,7 +88,7 @@
 
         <!-- Hero Section -->
         <!-- Hero Section -->
-        <section class="relative min-h-[calc(100vh-10rem)] flex items-center bg-blue-50 overflow-hidden">
+        <section class="relative min-h-[calc(100vh-7rem)] flex items-center bg-blue-50 overflow-hidden">
             <!-- Blurred Background Image -->
             <div class="absolute inset-0 bg-cover bg-center blur-sm"
                 style="background-image: url('../img/Bilder Shooting/IMG_4854.jpg');"></div>
