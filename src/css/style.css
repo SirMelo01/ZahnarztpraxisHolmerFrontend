@@ -1,6 +1,5 @@
 #top-info-bar {
   transition: top 0.3s ease-in-out, height 0.3s ease-in-out;
-  z-index: 100; /* Ensure it's above everything */
   height: 8rem; /* Default height (start larger) */
 }
 
@@ -27,4 +26,14 @@
 
 #mobile-menu a {
   padding: 1rem 0; /* Larger padding for better spacing */
+}
+
+/* Add smooth transition for the height change */
+#top-info-bar {
+  transition: height 0.3s ease, padding 0.3s ease; /* Transition for smooth resizing */
+}
+
+#top-info-bar.scrolled {
+  height: 60px; /* Adjust to the smaller size you want */
+  padding: 10px 0; /* Adjust padding for smaller version */
 }
