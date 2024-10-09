@@ -1,6 +1,6 @@
 #top-info-bar {
   transition: top 0.3s ease-in-out, height 0.3s ease-in-out;
-  height: 8rem; /* Default height (start larger) */
+  height: 6rem; /* Default height (start larger) */
 }
 
 #top-info-bar.scrolled {
