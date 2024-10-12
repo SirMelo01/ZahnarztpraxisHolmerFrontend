@@ -23,6 +23,21 @@ $(document).ready(function () {
     $('#menu-toggle').on('click', function () {
         $('#mobile-menu').toggleClass('hidden');
     });
+
+
+
+    $('.faq-question').click(function() {
+        // FAQ-Answer öffnen/schließen
+        $(this).next('.faq-answer').slideToggle();
+
+        // Toggle-Symbol ändern (+ / -)
+        var toggleSymbol = $(this).find('.faq-toggle');
+        toggleSymbol.text(toggleSymbol.text() === '+' ? '-' : '+');
+
+        // Alle anderen Antworten schließen
+        $('.faq-answer').not($(this).next('.faq-answer')).slideUp();
+        $('.faq-toggle').not(toggleSymbol).text('+');
+    });
 });
 
 
