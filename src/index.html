@@ -345,13 +345,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
                 <!-- Google Map -->
                 <div class="relative">
-                    <iframe class="w-full h-full rounded-lg shadow-lg" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBAM2o7PiQqwk15LC1XRH2e_KJ-jUa7KYk&zoom=13&maptype=roadmap&q=Weltladen%20Hengersberg" allowfullscreen></iframe>
-                    
-                    <!--<iframe class="w-full h-72 rounded-lg shadow-lg" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBAM2o7PiQqwk15LC1XRH2e_KJ&q=48.777107,12.856600" allowfullscreen></iframe>-->
-                    <div class="absolute bottom-2 right-2 bg-white p-2 rounded-md shadow-md">
-                        <p class="text-sm font-semibold text-gray-800">Adresse:</p>
-                        <p class="text-sm text-gray-600">LA, Vehicula Street, 58</p>
-                    </div>
+                    <iframe class="w-full h-full rounded-lg shadow-lg" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBAM2o7PiQqwk15LC1XRH2e_KJ-jUa7KYk&zoom=14&maptype=roadmap&q=Dr. med. dent. Lorenz Holmer" allowfullscreen></iframe>
                 </div>
     
                 <!-- Contact Information -->
@@ -391,7 +385,9 @@
                         <input type="email" placeholder="E-Mail" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600">
                     </div>
                     <textarea placeholder="Nachricht" rows="4" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"></textarea>
-                    <button type="submit" class="w-full bg-[#262C5D] text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700">Absenden</button>
+                    <div class="flex justify-end">
+                        <button type="submit" class="bg-[#262C5D] text-white px-6 py-2 rounded-lg shadow hover:bg-blue-700">Absenden</button>
+                    </div>
                 </form>
             </div>
         </div>
@@ -400,63 +396,82 @@
 
 
 
-
-
-
-
-
     <section itemscope itemtype="https://schema.org/FAQPage" class="py-10">
         <div class="bg-white py-10">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 class="text-3xl font-extrabold text-gray-900 mb-6">FAQs</h2>
-                <p class="text-gray-500 mb-8">
+                <h2 class="text-4xl font-bold text-[#262C5D] mb-6">FAQs</h2>
+                <p class="text-gray-600 text-lg mb-8 mt-4">
                     Quisque sodales nibh odio, vel accumsan odio luctus vel. Nam in lorem ac sem porttitor placerat at interdum leo.
                 </p>
-    
-                <!-- FAQ Item -->
-                <div class="border-b border-gray-200">
+
+
+                <!-- FAQ Item 1 -->
+                <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="border-b border-gray-200">
                     <button class="faq-question w-full text-left py-4 flex items-center justify-between text-gray-700 focus:outline-none">
-                        <span class="font-semibold">How find a doctor?</span>
+                        <span itemprop="name" class="font-semibold">Wie oft sollte ich zur Zahnkontrolle gehen?</span>
                         <span class="faq-toggle text-gray-500">+</span>
                     </button>
-                    <div class="faq-answer py-2 text-gray-500">
-                        <p>Phasellus at viverra nibh, vel gravida urna. Nunc vitae facilisis justo. Donec lacus dolor, tincidunt quis sagittis vitae, iaculis ut sem. Donec a turpis faucibus, ultrices ipsum ut, ultricies arcu. Nullam et ex finibus, fermentum lectus quis, rutrum justo. Vivamus luctus ornare turpis, ut blandit lorem cursus sed.</p>
+                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" class="faq-answer py-2 text-gray-500">
+                        <div itemprop="text">
+                            Es wird empfohlen, mindestens zweimal im Jahr zur zahnärztlichen Kontrolle zu gehen. So können potenzielle Probleme frühzeitig erkannt und behandelt werden.
+                        </div>
                     </div>
                 </div>
-    
-                <!-- Other FAQ Items -->
-                <div class="border-b border-gray-200">
+
+                <!-- FAQ Item 2 -->
+                <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="border-b border-gray-200">
                     <button class="faq-question w-full text-left py-4 flex items-center justify-between text-gray-700 focus:outline-none">
-                        <span class="font-semibold">Our Mission and Core Values</span>
+                        <span itemprop="name" class="font-semibold">Sind Zahnreinigungen schmerzhaft?</span>
                         <span class="faq-toggle text-gray-500">+</span>
                     </button>
-                    <div class="faq-answer py-2 text-gray-500">
-                        <p>Here goes the answer for "Our Mission and Core Values".</p>
+                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" class="faq-answer py-2 text-gray-500">
+                        <div itemprop="text">
+                            Eine professionelle Zahnreinigung ist in der Regel nicht schmerzhaft. Einige Patienten können leichte Empfindlichkeiten spüren, aber unsere geschulten Fachkräfte sorgen dafür, dass Sie sich so wohl wie möglich fühlen.
+                        </div>
                     </div>
                 </div>
-    
-                <div class="border-b border-gray-200">
+
+                <!-- FAQ Item 3 -->
+                <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="border-b border-gray-200">
                     <button class="faq-question w-full text-left py-4 flex items-center justify-between text-gray-700 focus:outline-none">
-                        <span class="font-semibold">Ready to start your free trial?</span>
+                        <span itemprop="name" class="font-semibold">Bieten Sie Notfallbehandlungen an?</span>
                         <span class="faq-toggle text-gray-500">+</span>
                     </button>
-                    <div class="faq-answer py-2 text-gray-500">
-                        <p>Here goes the answer for "Ready to start your free trial?".</p>
+                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" class="faq-answer py-2 text-gray-500">
+                        <div itemprop="text">
+                            Ja, wir bieten Notfallbehandlungen an. Wenn Sie Zahnschmerzen, einen abgebrochenen Zahn oder andere dringende Probleme haben, kontaktieren Sie uns bitte sofort, und wir werden unser Bestes tun, um Ihnen schnell zu helfen.
+                        </div>
                     </div>
                 </div>
-    
-                <div class="border-b border-gray-200">
+
+                <!-- FAQ Item 4 -->
+                <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="border-b border-gray-200">
                     <button class="faq-question w-full text-left py-4 flex items-center justify-between text-gray-700 focus:outline-none">
-                        <span class="font-semibold">See what our members are saying about our service?</span>
+                        <span itemprop="name" class="font-semibold">Was kostet eine professionelle Zahnreinigung?</span>
                         <span class="faq-toggle text-gray-500">+</span>
                     </button>
-                    <div class="faq-answer py-2 text-gray-500">
-                        <p>Here goes the answer for "See what our members are saying about our service?".</p>
+                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" class="faq-answer py-2 text-gray-500">
+                        <div itemprop="text">
+                            Die Kosten für eine professionelle Zahnreinigung variieren je nach individuellen Bedürfnissen und Umfang der Behandlung. Bitte kontaktieren Sie uns für detaillierte Informationen zu unseren Preisen und eventuellen Versicherungsabdeckungen.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="border-b border-gray-200">
+                    <button class="faq-question w-full text-left py-4 flex items-center justify-between text-gray-700 focus:outline-none">
+                        <span itemprop="name" class="font-semibold">Was kann ich gegen Zahnfleischbluten tun?</span>
+                        <span class="faq-toggle text-gray-500">+</span>
+                    </button>
+                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" class="faq-answer py-2 text-gray-500">
+                        <div itemprop="text">
+                            Zahnfleischbluten kann ein Zeichen für Gingivitis oder Parodontitis sein. Wir empfehlen eine gründliche Mundhygiene und regelmäßige Besuche bei Ihrem Zahnarzt. Bei anhaltendem Zahnfleischbluten sollten Sie einen Termin vereinbaren, damit wir die Ursache abklären und die passende Behandlung einleiten können.
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-</section>
+    </section>
 
 
 
