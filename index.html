@@ -109,30 +109,46 @@
         </div>
 
         <!-- Hero Section -->
-        <section class="relative min-h-[calc(100vh-6rem)] flex items-center bg-blue-50 overflow-hidden">
-            <!-- Blurred Background Image -->
-            <div class="absolute inset-0 bg-cover bg-center blur-[2px]"
-                style="background-image: url('img/Bilder Shooting/IMG_4854.jpg');"></div>
-
-            <div class="absolute inset-0 bg-white opacity-40"></div>
-
-            <!-- Content Wrapper -->
+        <!-- Hero Section -->
+        <section id="owner" class="relative min-h-[calc(70vh)] flex justify-center items-center">
+            <!-- Flex container -->
             <div
-                class="relative z-10 max-w-6xl mx-auto px-4 flex flex-col pb-10 md:flex-row items-center md:items-start space-y-8 md:space-y-0 md:space-x-8">
-                <div class="max-w-xl">
-                    <h1 class="text-4xl md:text-5xl font-semibold text-[#262C5D]">Zahnarztpraxis Lorenz Holmer</h1>
-                    <p class="mt-10 text-lg text-black">
-                        Herzlich willkommen in der Zahnarztpraxis Lorenz Holmer – Ihrer vertrauensvollen Adresse für
-                        moderne Zahnheilkunde in Ihrer Nähe. Wir bieten eine angenehme Atmosphäre, individuelle Beratung
-                        und schonende Behandlungen für die ganze Familie.
-                    </p>
-                    <button
-                        class="mt-10 hidden md:inline-block text-sm bg-[#262C5D] hover:scale-105 text-white px-8 py-3 rounded-full shadow-md shadow-[#262C5D]">
-                        Termin vereinbaren
-                    </button>
+                class="container flex flex-col-reverse items-center max-w-5xl px-6 mx-auto mt-10 space-y-0 md:space-y-0 md:flex-row md:space-x-12 space-x-0">
+
+                <!-- Right item with SVG heartbeat-tooth pattern background -->
+                <div class="flex flex-col mb-32 space-y-2 md:w-1/2 relative">
+                    <!-- SVG heartbeat-tooth pattern -->
+                    <svg class="absolute -top-16 -left-16 opacity-10 w-52 h-52" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 100 100">
+                        <!-- Heartbeat pattern -->
+                        <path d="M10 50 Q 15 40, 20 50 T 30 50 T 40 30 T 50 50 T 60 70 T 70 50 T 80 50 Q 85 40, 90 50"
+                            stroke="#262C5D" stroke-width="2" fill="none" />
+                    </svg>
+
+                    <h2
+                        class="max-w-sm md:max-w-none text-[#262C5D] font-semibold text-base text-center md:text-xl xl:text-5xl md:text-left">
+                        Dr. Lorenz Holmer
+                    </h2>
+                    <div>
+                        <p class="text-xl">Ihr Zahnarzt in Plattling</p>
+                        <p class="text-xl font-semibold text-blue-950">Für Ihre Zähne</p>
+                        <button
+                            class="mt-10 hidden md:inline-block text-sm bg-[#262C5D] hover:scale-105 text-white px-8 py-3 rounded-full shadow-md shadow-[#262C5D]">
+                            Termin vereinbaren
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Image -->
+                <div class="md:w-1/2 mt-5 md:mt-0">
+                    <img src="img/Portrait/LH Portrait.png" class="rounded-xl" alt="">
                 </div>
             </div>
+            <!-- Gradient Divider -->
+            <div class="absolute bottom-0 w-full h-20 bg-gradient-to-b from-transparent to-slate-50"></div>
         </section>
+
+
 
         <!-- Services Section -->
         <section class="py-20">
@@ -174,8 +190,7 @@
                 <div class="flex flex-col md:flex-row items-center justify-center md:space-x-8">
                     <div class="flex-1 order-2 md:order-1 mt-8 md:mt-0 text-center">
                         <div class="flex flex-col items-center space-x-4 mb-6 justify-center">
-                            <img src="img/Icons Behandlungen/Fuellung.png" alt="Icon Composite"
-                                class="w-14 h-14 mb-4">
+                            <img src="img/Icons Behandlungen/Fuellung.png" alt="Icon Composite" class="w-14 h-14 mb-4">
                             <h3 class="text-3xl font-semibold text-[#262C5D]">Composite Restaurationen</h3>
                         </div>
                         <p class="text-gray-600">
@@ -193,8 +208,7 @@
                     <div class="flex-1 flex order-1 md:order-2 justify-center items-center p-8">
                         <img-comparison-slider class="shadow-lg rounded-xl shadow-slate-600">
                             <img class="rounded-lg h-[22rem]" slot="first" src="img/Behandlungsfaelle/Flg AM.png" />
-                            <img class="rounded-lg h-[22rem]" slot="second"
-                                src="img/Behandlungsfaelle/Flg Comp.png" />
+                            <img class="rounded-lg h-[22rem]" slot="second" src="img/Behandlungsfaelle/Flg Comp.png" />
                         </img-comparison-slider>
                     </div>
                 </div>
@@ -204,16 +218,13 @@
                 <div class="flex flex-col md:flex-row items-center md:space-x-8">
                     <div class="flex-1 flex justify-center items-center">
                         <img-comparison-slider class="shadow-lg rounded-xl shadow-slate-600">
-                            <img slot="first" class="rounded-lg h-[22rem]"
-                                src="img/Behandlungsfaelle/WF nachher.png" />
-                            <img slot="second" class="rounded-lg h-[22rem]"
-                                src="img/Behandlungsfaelle/WF vorher.png" />
+                            <img slot="first" class="rounded-lg h-[22rem]" src="img/Behandlungsfaelle/WF nachher.png" />
+                            <img slot="second" class="rounded-lg h-[22rem]" src="img/Behandlungsfaelle/WF vorher.png" />
                         </img-comparison-slider>
                     </div>
                     <div class="flex-1 mt-8 md:mt-0 text-center">
                         <div class="flex flex-col items-center space-x-4 mb-6 justify-center">
-                            <img src="img/Icons Behandlungen/Fuellung.png" alt="Icon Endodontie"
-                                class="w-14 h-14 mb-4">
+                            <img src="img/Icons Behandlungen/Fuellung.png" alt="Icon Endodontie" class="w-14 h-14 mb-4">
                             <h3 class="text-3xl font-semibold text-[#262C5D]">Endodontie</h3>
                         </div>
                         <p class="text-gray-600">
@@ -279,38 +290,8 @@
             </div>
         </section>
 
-        <!-- Owner Section -->
-        <!-- Add a gradient transition between sections -->
-        <section id="owner" class="relative">
-            <!-- Flex container -->
-            <div
-                class="container flex flex-col-reverse items-center px-6 mx-auto mt-10 space-y-0 md:space-y-0 md:flex-row md:space-x-12 space-x-0">
-                <!-- Image -->
-                <div class="md:w-1/2 mt-5 md:mt-0">
-                    <img src="img/Portrait/LH Portrait.png" class="rounded-xl" alt="">
-                </div>
-                <!-- Right item -->
-                <div class="flex flex-col mb-32 space-y-12 md:w-1/2">
-                    <h2 class="max-w-sm md:max-w-none text-base text-center md:text-xl xl:text-3xl md:text-left italic">
-                        "Gesundheit beginnt im Mund"
-                    </h2>
-                    <p>Sie erwartet eine ausführliche Diagnostik und Beratung, ein umfassende Auswahl von
-                        Behandlungsmöglichkeiten...</p>
-                    <div class="flex justify-start items-center space-x-8">
-                        <div>
-                            <p class="text-black text-lg text-center lg:text-left">Dr. Lorenz Holmer</p>
-                            <p class="text-[#262C5D] text-lg text-center lg:text-left">Ihr Zahnarzt in Plattling</p>
-                        </div>
-                        <img class="w-56" src="img/Unterschrift neu.png" alt="">
-                    </div>
-                </div>
-            </div>
-            <!-- Gradient Divider -->
-            <div class="absolute bottom-0 w-full h-20 bg-gradient-to-b from-white to-blue-50"></div>
-        </section>
-
         <!-- Unsere Praxis Section -->
-        <section class="py-14 bg-blue-50 relative">
+        <section class="py-14 bg-slate-50 relative">
             <div class="max-w-6xl mx-auto px-4 text-center">
                 <!-- Title -->
                 <h2 class="text-4xl font-semibold text-[#262C5D]">Unsere Praxis</h2>
@@ -325,10 +306,10 @@
                     <!-- Slides -->
                     <div class="swiper-slide rounded-lg"><img src="img/Behandlungszimmer/IMG_4766.jpg"
                             alt="Praxis Bild 1" class="w-full h-[500px] object-cover rounded-lg shadow-md "></div>
-                    <div class="swiper-slide rounded-lg"><img src="img/Bilder Shooting/IMG_5013.jpg"
-                            alt="Praxis Bild 2" class="w-full h-[500px] object-cover rounded-lg shadow-md"></div>
-                    <div class="swiper-slide rounded-lg"><img src="img/Bilder Shooting/IMG_4947.jpg"
-                            alt="Praxis Bild 3" class="w-full h-[500px] object-cover rounded-lg shadow-md"></div>
+                    <div class="swiper-slide rounded-lg"><img src="img/Bilder Shooting/IMG_5013.jpg" alt="Praxis Bild 2"
+                            class="w-full h-[500px] object-cover rounded-lg shadow-md"></div>
+                    <div class="swiper-slide rounded-lg"><img src="img/Bilder Shooting/IMG_4947.jpg" alt="Praxis Bild 3"
+                            class="w-full h-[500px] object-cover rounded-lg shadow-md"></div>
                     ...
                 </div>
                 <!-- If we need pagination -->
@@ -341,7 +322,7 @@
                 <!-- If we need scrollbar -->
                 <div class="swiper-scrollbar"></div>
             </div>
-            <div class="absolute bottom-0 w-full h-20 bg-gradient-to-b from-blue-50 to-white"></div>
+            <div class="absolute bottom-0 w-full h-20 bg-gradient-to-b from-slate-50 to-white"></div>
         </section>
 
 
