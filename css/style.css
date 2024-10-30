@@ -1,7 +1,11 @@
 #top-info-bar {
   transition: top 0.3s ease-in-out, height 0.3s ease-in-out;
   height: 6rem; /* Default height (start larger) */
-  top: calc(var(--info-banner-height, 0px));
+  top: calc(var(--info-banner-height, 0px)); /*DAS HIER NUR WENN BANNER DA IST*/
+}
+
+#owner {
+  top: calc(-1 * var(--info-banner-height));    /*DAS HIER NUR WENN BANNER DA IST*/
 }
 
 #top-info-bar.scrolled {
