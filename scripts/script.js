@@ -19,6 +19,19 @@ $(document).ready(function () {
 
     window.addEventListener('scroll', updateNavbarState);
 
+
+    // Funktion zur Berechnung der Bannerhöhe und Zuweisung an die CSS-Variable
+    function setInfoBannerHeight() {
+        var bannerHeight = $('#info-banner').outerHeight() || 0;
+        $(':root').css('--info-banner-height', bannerHeight + 'px');
+    }
+
+    // Initiale Einstellung der Bannerhöhe
+    setInfoBannerHeight();
+
+    // Neu berechnen, falls Fenstergröße oder Inhalt sich ändert
+    $(window).on('resize', setInfoBannerHeight);
+
     // Toggle mobile menu
     $('#menu-toggle').on('click', function () {
         $('#mobile-menu').toggleClass('hidden');
