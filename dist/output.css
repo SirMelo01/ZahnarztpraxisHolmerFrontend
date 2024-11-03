@@ -662,6 +662,16 @@ video {
   margin-bottom: 7rem;
 }
 
+.mx-8 {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.my-10 {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -799,6 +809,22 @@ video {
 
 .h-full {
   height: 100%;
+}
+
+.h-96 {
+  height: 24rem;
+}
+
+.h-\[460px\] {
+  height: 460px;
+}
+
+.h-\[400px\] {
+  height: 400px;
+}
+
+.h-\[450px\] {
+  height: 450px;
 }
 
 .max-h-24 {
@@ -1237,12 +1263,39 @@ video {
   padding-bottom: 1rem;
 }
 
+.py-24 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.py-28 {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.py-80 {
+  padding-top: 20rem;
+  padding-bottom: 20rem;
+}
+
 .pl-20 {
   padding-left: 5rem;
 }
 
 .pl-3 {
   padding-left: 0.75rem;
+}
+
+.pb-24 {
+  padding-bottom: 6rem;
+}
+
+.pt-8 {
+  padding-top: 2rem;
+}
+
+.pb-72 {
+  padding-bottom: 18rem;
 }
 
 .text-left {
@@ -1435,6 +1488,14 @@ video {
 }
 
 @media (min-width: 640px) {
+  .sm\:h-\[400\] {
+    height: 400;
+  }
+
+  .sm\:h-\[450px\] {
+    height: 450px;
+  }
+
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }

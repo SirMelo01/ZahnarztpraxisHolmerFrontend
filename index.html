@@ -64,9 +64,9 @@
                 <!-- Menüpunkte -->
                 <div class="hidden md:flex items-center space-x-6 text-lg text-gray-700">
                     <a href="#" class="hover:text-blue-600">Leistungen</a>
-                    <a href="#" class="hover:text-blue-600">Kontakt</a>
                     <a href="#" class="hover:text-blue-600">Galerie</a>
                     <a href="#" class="hover:text-blue-600">Team</a>
+                    <a href="#" class="hover:text-blue-600">Kontakt</a>
                     <!-- Telefon Icon mit größerem Abstand -->
                     <a href="tel:+1234567890" class="hover:text-blue-600 pl-20"> <!-- ml-8 für Abstand -->
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -95,9 +95,9 @@
             <!-- Mobile Menu -->
             <div id="mobile-menu" class="hidden md:hidden absolute top-12 left-0 w-full bg-white py-4 px-6">
                 <a href="#" class="block py-2 hover:text-blue-600">Leistungen</a>
-                <a href="#" class="block py-2 hover:text-blue-600">Kontakt</a>
                 <a href="#" class="block py-2 hover:text-blue-600">Galerie</a>
                 <a href="#" class="block py-2 hover:text-blue-600">Team</a>
+                <a href="#" class="block py-2 hover:text-blue-600">Kontakt</a>
                 <!-- Telefon Icon im Burger-Menü -->
                 <a href="tel:+1234567890" class="block py-2 hover:text-blue-600">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -117,10 +117,10 @@
         </div>
 
         <!-- Hero Section -->
-        <section id="owner" class="bg-green-500 relative min-h-[calc(70vh)] flex justify-center items-end">
+        <section id="owner" class="relative min-h-[calc(70vh)] flex justify-center items-end">
             <!-- Flex container -->
             <div
-                class="container bg-purple-600 flex flex-col-reverse items-center max-w-5xl px-6 mx-auto mt-10 space-y-0 md:space-y-0 md:flex-row md:space-x-12 space-x-0">
+                class="container flex flex-col-reverse items-center max-w-5xl px-6 mx-auto mt-10 space-y-0 md:space-y-0 md:flex-row md:space-x-12 space-x-0">
 
                 <!-- Right item with SVG heartbeat-tooth pattern background -->
                 <div class="flex flex-col mb-32 space-y-2 md:w-1/2 relative">
@@ -413,7 +413,7 @@
         </section>
 
         <section class="bg-gray-100 relative">
-            <div class="max-w-7xl mx-auto p-8">
+            <div class="max-w-7xl mx-auto pt-8 pb-24 px-8">
                 <!-- Title and Appointment Button -->
                 <div class="text-center">
                     <h1 class="text-4xl font-semibold mb-4 text-[#262C5D]">Unsere Kontakte</h1>
@@ -424,14 +424,13 @@
                 </div>
 
                 <!-- Google Map with contact details -->
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12 z-50">
                     <!-- Google Map -->
                     <div class="relative">
                         <iframe class="w-full h-full rounded-lg shadow-lg"
                             src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBAM2o7PiQqwk15LC1XRH2e_KJ-jUa7KYk&zoom=14&maptype=roadmap&q=Dr. med. dent. Lorenz Holmer"
                             allowfullscreen></iframe>
                     </div>
-
                     <!-- Contact Information -->
                     <div class="flex flex-col">
                         <!-- Work Time, Address, and Phone in one row -->
@@ -460,9 +459,9 @@
                                 <h2 class="text-lg font-semibold mt-4 mb-2">Telefon:</h2>
                                 <p class="text-gray-600 mb-6">+123 6897 8974</p>
 
-                                <a href="#termin"
+                                <a href="#notdienst"
                                     class="bg-[#262C5D] text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700">
-                                    Termin vereinbaren
+                                    Notdienst
                                 </a>
                             </div>
                         </div>
@@ -477,9 +476,15 @@
                             </div>
                             <textarea placeholder="Nachricht" rows="4"
                                 class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"></textarea>
-                            <div class="flex justify-end">
-                                <button type="submit"
-                                    class="bg-[#262C5D] text-white px-6 py-2 rounded-lg shadow hover:bg-blue-700">Absenden</button>
+                            <div class="flex justify-end space-x-6">
+                                <a href="#notdienst"
+                                    class="bg-[#262C5D] text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700">
+                                    Termin vereinbaren
+                                </a>
+                                <a href="#notdienst"
+                                    class="bg-[#262C5D] text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700">
+                                    Senden
+                                </a>
                             </div>
                         </form>
                     </div>
