@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
     <meta charset="UTF-8">
@@ -13,34 +13,14 @@
     <title>Zahnarzt - Holmer Lorenz</title>
     <link rel="icon" type="image/png" href="/img/Logo/Favicon.jpg" sizes="200x200">
     <link rel="stylesheet" href="css/startscreen.css">
-    <link rel="stylesheet" href="css/style.css">
-    <style>
-        body {
-            font-family: 'Fredoka', sans-serif;
-        }
-    </style>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="css/img-comparison-slider.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <script src="scripts/swiper-bundle.min.js"></script>
     <script src="scripts/jquery.js"></script>
     <script defer src="scripts/img-comparison-slider.js"></script>
-    <link rel="stylesheet" href="css/img-comparison-slider.css" />
+    <link rel="stylesheet" href="css/style.css"> <!--muss als letztes-->
+    
 </head>
-
-<!--Costume Style Navbar-->
-<style>
-    :root {
-        --swiper-theme-color: #262C5D;
-    }
-</style>
-
-
-<!--Für FAQ-->
-<style>
-    .faq-answer {
-        display: none;
-    }
-</style>
 
 <body class="bg-white font-sans">
 
@@ -49,7 +29,6 @@
     </div>
 
     <div id="main-content">
-
         <div id="info-banner" class="bg-blue-500 text-white text-center text-sm py-2 px-4 sticky top-0 z-40">
             <p>Wir sind vom 24.12. bis 01.01. im Urlaub. Ab dem 02.01. sind wir wieder für Sie da!</p>
         </div>
@@ -131,13 +110,12 @@
                         <path d="M10 50 Q 15 40, 20 50 T 30 50 T 40 30 T 50 50 T 60 70 T 70 50 T 80 50 Q 85 40, 90 50"
                             stroke="#262C5D" stroke-width="2" fill="none" />
                     </svg>
-
-                    <h2
+                    <h1
                         class="max-w-sm md:max-w-none text-[#262C5D] font-semibold text-base text-center md:text-xl xl:text-5xl md:text-left">
                         Dr. Lorenz Holmer
-                    </h2>
+                    </h1>
                     <div>
-                        <p class="text-xl">Ihr Zahnarzt in Plattling</p>
+                        <h2 class="text-xl">Ihr Zahnarzt in Plattling</h2>
                         <p class="text-xl font-semibold text-blue-950">Für Ihre Zähne</p>
                         <button
                             class="mt-10 hidden md:inline-block text-sm bg-[#262C5D] text-white px-8 py-3 rounded-full shadow-md shadow-[#262C5D] transition-transform duration-300 ease-in-out hover:scale-105">
@@ -185,7 +163,7 @@
                             beispielsweise Karies oder Parodontitis. Neben einer ausgewogenen und zahngesunden Ernährung
                             ist eine optimale Mundhygiene und regelmäßige professionelle Zahnreinigungen entscheidend
                             für die lebenslange Zahngesundheit.
-                            <br><br>Gerne unterstützen wir Sie bei der Optimierung oder zeigen Ihnen oder Ihren Kindern,
+                            Gerne unterstützen wir Sie bei der Optimierung oder zeigen Ihnen oder Ihren Kindern,
                             wie eine perfekte Mundhygiene aussieht.
                         </p>
                     </div>
@@ -205,7 +183,7 @@
                             optimale Mundhygiene
                             und regelmäßige professionelle Zahnreinigungen entscheidend für die lebenslange
                             Zahngesundheit.
-                            <br><br>Gerne unterstützen wir Sie bei der Optimierung oder zeigen Ihnen oder Ihren Kindern,
+                            Gerne unterstützen wir Sie bei der Optimierung oder zeigen Ihnen oder Ihren Kindern,
                             wie eine
                             perfekte Mundhygiene aussieht.
                         </p>
@@ -237,7 +215,7 @@
                             beispielsweise Karies oder Parodontitis. Neben einer ausgewogenen und zahngesunden Ernährung
                             ist eine optimale Mundhygiene und regelmäßige professionelle Zahnreinigungen entscheidend
                             für die lebenslange Zahngesundheit.
-                            <br><br>Gerne unterstützen wir Sie bei der Optimierung oder zeigen Ihnen oder Ihren Kindern,
+                            Gerne unterstützen wir Sie bei der Optimierung oder zeigen Ihnen oder Ihren Kindern,
                             wie eine perfekte Mundhygiene aussieht.
                         </p>
                     </div>
@@ -256,7 +234,7 @@
                             beispielsweise Karies oder Parodontitis. Neben einer ausgewogenen und zahngesunden Ernährung
                             ist eine optimale Mundhygiene und regelmäßige professionelle Zahnreinigungen entscheidend
                             für die lebenslange Zahngesundheit.
-                            <br><br>Gerne unterstützen wir Sie bei der Optimierung oder zeigen Ihnen oder Ihren Kindern,
+                            Gerne unterstützen wir Sie bei der Optimierung oder zeigen Ihnen oder Ihren Kindern,
                             wie eine perfekte Mundhygiene aussieht.
                         </p>
                     </div>
@@ -286,7 +264,7 @@
                             beispielsweise Karies oder Parodontitis. Neben einer ausgewogenen und zahngesunden Ernährung
                             ist eine optimale Mundhygiene und regelmäßige professionelle Zahnreinigungen entscheidend
                             für die lebenslange Zahngesundheit.
-                            <br><br>Gerne unterstützen wir Sie bei der Optimierung oder zeigen Ihnen oder Ihren Kindern,
+                            Gerne unterstützen wir Sie bei der Optimierung oder zeigen Ihnen oder Ihren Kindern,
                             wie eine perfekte Mundhygiene aussieht.
                         </p>
                     </div>
@@ -349,12 +327,15 @@
                 <div class="swiper-wrapper">
                     <!-- Slides -->
                     <div class="swiper-slide rounded-lg"><img src="img/Behandlungszimmer/IMG_4766.jpg"
-                            alt="Praxis Bild 1" class="w-full h-[500px] object-cover rounded-lg shadow-md "></div>
+                            alt="Praxis Bild 1" class="w-full h-[500px] object-cover rounded-lg shadow-md ">
+                        <p class="pt-6 pb-8 text-center text-gray-600">Das ist ein Bild aus unserer Praxis. Einer unserer tollen Behandlungszimmer!</p></div>
                     <div class="swiper-slide rounded-lg"><img src="img/Bilder Shooting/IMG_5013.jpg" alt="Praxis Bild 2"
-                            class="w-full h-[500px] object-cover rounded-lg shadow-md"></div>
+                            class="w-full h-[500px] object-cover rounded-lg shadow-md">
+                            <p class="pt-6 pb-8 text-center text-gray-600">Ein Bild, welches die aktive Behandlung an einem Patienten zeigt.</p></div>
                     <div class="swiper-slide rounded-lg"><img src="img/Bilder Shooting/IMG_4947.jpg" alt="Praxis Bild 3"
-                            class="w-full h-[500px] object-cover rounded-lg shadow-md"></div>
-                    ...
+                            class="w-full h-[500px] object-cover rounded-lg shadow-md">
+                            <p class="pt-6 pb-8 text-center text-gray-600">Unsere Artzhelferinnen empfangen Sie gleich am Eingang.</p></div>
+                    
                 </div>
                 <!-- If we need pagination -->
                 <div class="swiper-pagination"></div>
@@ -364,7 +345,7 @@
                 <div class="swiper-button-next"></div>
 
                 <!-- If we need scrollbar -->
-                <div class="swiper-scrollbar"></div>
+                <!--<div class="swiper-scrollbar"></div>-->
             </div>
             <div class="absolute bottom-0 w-full h-20 bg-gradient-to-b from-gray-100 to-white"></div>
         </section>
@@ -372,8 +353,7 @@
         <section class="py-14 relative">
             <div class="max-w-6xl mx-auto px-4 text-center my-28">
                 <!-- Title -->
-                <h2 class="text-4xl font-semibold text-[#262C5D]">Unser <span class="text-[#262C5D]">Team</span>
-                </h2>
+                <h2 class="text-4xl font-semibold text-[#262C5D]">Unser Team</h2>
                 <p class="mt-4 text-gray-600 text-lg">Meet our experienced team of professionals dedicated to your oral
                     health.</p>
 
@@ -416,11 +396,10 @@
             <div class="max-w-7xl mx-auto pt-8 pb-24 px-8">
                 <!-- Title and Appointment Button -->
                 <div class="text-center">
-                    <h1 class="text-4xl font-semibold mb-4 text-[#262C5D]">Unsere Kontakte</h1>
-                    <p class="text-gray-600 mb-6">Wir stehen Ihnen jederzeit zur Verfügung, um Ihre Fragen zu
-                        beantworten
-                        und Termine zu vereinbaren.</p>
-
+                    <h2 class="text-4xl font-semibold text-[#262C5D]">Unsere Kontakte</h2>
+                    <p class="mt-4 text-gray-600 mb-6 text-lg">
+                        Wir stehen Ihnen jederzeit zur Verfügung, um Ihre Fragen zu beantworten und Termine zu vereinbaren.
+                    </p>
                 </div>
 
                 <!-- Google Map with contact details -->
@@ -437,7 +416,7 @@
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                             <!-- Work Time -->
                             <div>
-                                <h2 class="text-lg font-semibold mb-2">Öffnungszeiten:</h2>
+                                <h3 class="text-lg font-semibold mb-2">Öffnungszeiten:</h3>
                                 <ul class="text-gray-600">
                                     <li>Montag: 9 AM - 6 PM</li>
                                     <li>Dienstag: 10 AM - 7 PM</li>
@@ -452,11 +431,11 @@
                             <!-- Address and Phone stacked under each other -->
                             <div>
                                 <!-- Address -->
-                                <h2 class="text-lg font-semibold mb-2">Adresse:</h2>
+                                <h3 class="text-lg font-semibold mb-2">Adresse:</h3>
                                 <p class="text-gray-600">LA, Vehicula Street, 58</p>
 
                                 <!-- Phone -->
-                                <h2 class="text-lg font-semibold mt-4 mb-2">Telefon:</h2>
+                                <h3 class="text-lg font-semibold mt-4 mb-2">Telefon:</h3>
                                 <p class="text-gray-600 mb-6">+123 6897 8974</p>
 
                                 <a href="#notdienst"
@@ -499,8 +478,8 @@
         <section itemscope itemtype="https://schema.org/FAQPage" class="py-10">
             <div class="bg-white py-10">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <h2 class="text-4xl font-semibold text-[#262C5D] mb-6">FAQs</h2>
-                    <p class="text-gray-600 text-lg mb-8 mt-4">
+                    <h2 class="text-4xl font-semibold text-[#262C5D]">FAQs</h2>
+                    <p class="text-gray-600 mb-8 mt-4 text-lg">
                         Quisque sodales nibh odio, vel accumsan odio luctus vel. Nam in lorem ac sem porttitor placerat
                         at interdum leo.
                     </p>
@@ -511,16 +490,16 @@
                         class="border-b border-gray-200">
                         <button
                             class="faq-question w-full text-left py-4 flex items-center justify-between text-gray-700 focus:outline-none">
-                            <span itemprop="name" class="font-semibold">Wie oft sollte ich zur Zahnkontrolle
-                                gehen?</span>
+                            <h3 itemprop="name" class="font-semibold">Wie oft sollte ich zur Zahnkontrolle
+                                gehen?</h3>
                             <span class="faq-toggle text-gray-500">+</span>
                         </button>
                         <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"
                             class="faq-answer py-2 text-gray-500">
-                            <div itemprop="text">
+                            <p itemprop="text">
                                 Es wird empfohlen, mindestens zweimal im Jahr zur zahnärztlichen Kontrolle zu gehen. So
                                 können potenzielle Probleme frühzeitig erkannt und behandelt werden.
-                            </div>
+                            </p>
                         </div>
                     </div>
 
@@ -529,16 +508,16 @@
                         class="border-b border-gray-200">
                         <button
                             class="faq-question w-full text-left py-4 flex items-center justify-between text-gray-700 focus:outline-none">
-                            <span itemprop="name" class="font-semibold">Sind Zahnreinigungen schmerzhaft?</span>
+                            <h3 itemprop="name" class="font-semibold">Sind Zahnreinigungen schmerzhaft?</h3>
                             <span class="faq-toggle text-gray-500">+</span>
                         </button>
                         <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"
                             class="faq-answer py-2 text-gray-500">
-                            <div itemprop="text">
+                            <p itemprop="text">
                                 Eine professionelle Zahnreinigung ist in der Regel nicht schmerzhaft. Einige Patienten
                                 können leichte Empfindlichkeiten spüren, aber unsere geschulten Fachkräfte sorgen dafür,
                                 dass Sie sich so wohl wie möglich fühlen.
-                            </div>
+                            </p>
                         </div>
                     </div>
 
@@ -547,16 +526,16 @@
                         class="border-b border-gray-200">
                         <button
                             class="faq-question w-full text-left py-4 flex items-center justify-between text-gray-700 focus:outline-none">
-                            <span itemprop="name" class="font-semibold">Bieten Sie Notfallbehandlungen an?</span>
+                            <h3 itemprop="name" class="font-semibold">Bieten Sie Notfallbehandlungen an?</h3>
                             <span class="faq-toggle text-gray-500">+</span>
                         </button>
                         <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"
                             class="faq-answer py-2 text-gray-500">
-                            <div itemprop="text">
+                            <p itemprop="text">
                                 Ja, wir bieten Notfallbehandlungen an. Wenn Sie Zahnschmerzen, einen abgebrochenen Zahn
                                 oder andere dringende Probleme haben, kontaktieren Sie uns bitte sofort, und wir werden
                                 unser Bestes tun, um Ihnen schnell zu helfen.
-                            </div>
+                            </p>
                         </div>
                     </div>
 
@@ -565,17 +544,17 @@
                         class="border-b border-gray-200">
                         <button
                             class="faq-question w-full text-left py-4 flex items-center justify-between text-gray-700 focus:outline-none">
-                            <span itemprop="name" class="font-semibold">Was kostet eine professionelle
-                                Zahnreinigung?</span>
+                            <h3 itemprop="name" class="font-semibold">Was kostet eine professionelle
+                                Zahnreinigung?</h3>
                             <span class="faq-toggle text-gray-500">+</span>
                         </button>
                         <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"
                             class="faq-answer py-2 text-gray-500">
-                            <div itemprop="text">
+                            <p itemprop="text">
                                 Die Kosten für eine professionelle Zahnreinigung variieren je nach individuellen
                                 Bedürfnissen und Umfang der Behandlung. Bitte kontaktieren Sie uns für detaillierte
                                 Informationen zu unseren Preisen und eventuellen Versicherungsabdeckungen.
-                            </div>
+                            </p>
                         </div>
                     </div>
 
@@ -584,17 +563,17 @@
                         class="border-b border-gray-200">
                         <button
                             class="faq-question w-full text-left py-4 flex items-center justify-between text-gray-700 focus:outline-none">
-                            <span itemprop="name" class="font-semibold">Was kann ich gegen Zahnfleischbluten tun?</span>
+                            <h3 itemprop="name" class="font-semibold">Was kann ich gegen Zahnfleischbluten tun?</h3>
                             <span class="faq-toggle text-gray-500">+</span>
                         </button>
                         <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"
                             class="faq-answer py-2 text-gray-500">
-                            <div itemprop="text">
+                            <p itemprop="text">
                                 Zahnfleischbluten kann ein Zeichen für Gingivitis oder Parodontitis sein. Wir empfehlen
                                 eine gründliche Mundhygiene und regelmäßige Besuche bei Ihrem Zahnarzt. Bei anhaltendem
                                 Zahnfleischbluten sollten Sie einen Termin vereinbaren, damit wir die Ursache abklären
                                 und die passende Behandlung einleiten können.
-                            </div>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -653,7 +632,7 @@
                     <!-- Links -->
                     <div class="flex-1 flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-16">
                         <div>
-                            <h4 class="text-lg font-semibold text-[#262C5D]">Quick Links</h4>
+                            <p class="text-lg font-semibold text-[#262C5D]">Quick Links</p>
                             <ul class="mt-4 space-y-2">
                                 <li><a href="#" class="text-gray-600 hover:text-blue-800">Impressum</a></li>
                                 <li><a href="#" class="text-gray-600 hover:text-blue-800">Datenschutz</a></li>
@@ -662,7 +641,7 @@
                             </ul>
                         </div>
                         <div>
-                            <h4 class="text-lg font-semibold text-[#262C5D]">Help Center</h4>
+                            <p class="text-lg font-semibold text-[#262C5D]">Help Center</p>
                             <ul class="mt-4 space-y-2">
                                 <li><a href="#" class="text-gray-600 hover:text-blue-800">Leistungen</a></li>
                                 <li><a href="#" class="text-gray-600 hover:text-blue-800">Galerie</a></li>
@@ -680,42 +659,6 @@
             </div>
         </footer>
     </div>
-
-
-    <script>
-        // Mobile Menu Toggle
-        const menuToggle = document.getElementById('menu-toggle');
-        const mobileMenu = document.getElementById('mobile-menu');
-
-        menuToggle.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-
-        // Swiper Slider
-        const swiper = new Swiper('.swiper', {
-            speed: 400,
-            spaceBetween: 100,
-            loop: true, // Aktiviert das endlose Swipen
-            autoplay: {
-                delay: 5000,
-                disableOnInteraction: false, // Autoplay nach Benutzung der Buttons nicht deaktivieren
-            },
-            pagination: {
-                el: '.swiper-pagination',
-                type: 'bullets',
-                clickable: true, // Bullets anklickbar machen
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            scrollbar: {
-                el: '.swiper-scrollbar',
-                draggable: true,
-            },
-        });
-    </script>
-
 
     <script src="scripts/startscreen.js"></script>
     <script src="scripts/script.js"></script>

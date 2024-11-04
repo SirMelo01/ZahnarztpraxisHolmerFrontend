@@ -1,3 +1,14 @@
+body {
+  font-family: 'Fredoka', sans-serif;
+}
+:root {
+  --swiper-theme-color: #262C5D;
+}
+
+.faq-answer {
+  display: none;
+}
+
 #top-info-bar {
   transition: top 0.3s ease-in-out, height 0.3s ease-in-out;
   height: 6rem; /* Default height (start larger) */
