@@ -98,13 +98,13 @@
         
 
         <!-- Hero Section -->
-        <section id="owner" class="relative min-h-[calc(70vh)] flex justify-center items-end">
+        <section id="owner" class="relative lg:min-h-[calc(70vh)] flex justify-center items-center">
             <!-- Flex container -->
             <div
-                class="container flex flex-col items-center max-w-5xl px-6 mx-auto mt-10 space-y-0 md:space-y-0 md:flex-row md:space-x-12 space-x-0">
+                class="container flex flex-col items-center max-w-3xl lg:max-w-5xl px-6 mx-auto mt-24 md:mt-10 space-y-0 md:space-y-0 md:flex-row md:space-x-12 space-x-0">
 
                 <!-- Right item with SVG heartbeat-tooth pattern background -->
-                <div class="flex flex-col mb-32 space-y-2 md:w-1/2 relative">
+                <div class="flex flex-col mb-4 lg:mb-32 space-y-2 md:w-1/2 relative">
                     <!-- SVG heartbeat-tooth pattern -->
                     <svg class="absolute -top-16 -left-16 opacity-10 w-52 h-52" xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 100 100">
@@ -113,7 +113,7 @@
                             stroke="#262C5D" stroke-width="2" fill="none" />
                     </svg>
                     <h1
-                        class="max-w-sm md:max-w-none text-[#262C5D] font-semibold text-base text-center md:text-xl xl:text-5xl md:text-left">
+                        class="max-w-sm md:max-w-none text-[#262C5D] font-semibold text-3xl text-center md:text-4xl xl:text-5xl md:text-left">
                         Dr. Lorenz Holmer
                     </h1>
                     <div>
@@ -127,7 +127,7 @@
                 </div>
 
                 <!-- Image -->
-                <div class="md:w-1/2 mt-5 md:mt-0">
+                <div class="md:w-1/2 mt-0 md:mt-0 max-w-80 md:max-w-full">
                     <img src="img/Portrait/LH Portrait.png" class="rounded-xl" alt="">
                 </div>
             </div>
@@ -136,7 +136,7 @@
         </section>
 
         <!-- Services Section -->
-        <section class="py-20">
+        <section class="py-8 md:py-20">
             <div class="max-w-6xl mx-auto px-4 text-center">
                 <!-- Title and Subtitle -->
                 <h2 class="text-4xl font-semibold text-[#262C5D]">Unsere Leistungen</h2>
@@ -324,7 +324,7 @@
             </div>
 
             <!-- Slider main container -->
-            <div class="swiper container mx-auto max-w-5xl mt-8">
+            <div class="swiper container mx-auto max-w-5xl mt-8 px-2 md:px-0">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                     <!-- Slides -->
@@ -352,8 +352,8 @@
             <div class="absolute bottom-0 w-full h-20 bg-gradient-to-b from-gray-100 to-white"></div>
         </section>
 
-        <section class="py-14 relative">
-            <div class="max-w-6xl mx-auto px-4 text-center my-28">
+        <section class="md:py-14 relative">
+            <div class="max-w-6xl mx-auto px-4 text-center pt-14 pb-20 md:my-28">
                 <!-- Title -->
                 <h2 class="text-4xl font-semibold text-[#262C5D]">Unser Team</h2>
                 <p class="mt-4 text-gray-600 text-lg">Meet our experienced team of professionals dedicated to your oral
@@ -457,16 +457,25 @@
                             </div>
                             <textarea placeholder="Nachricht" rows="4"
                                 class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"></textarea>
-                            <div class="flex justify-end space-x-6">
-                                <a href="#notdienst"
-                                    class="bg-[#262C5D] text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700">
-                                    Termin vereinbaren
-                                </a>
-                                <a href="#notdienst"
-                                    class="bg-[#262C5D] text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700">
-                                    Senden
-                                </a>
-                            </div>
+                                <div class="flex justify-between md:justify-end md:space-x-6">
+                                    <!-- "Termin vereinbaren" - Visible only on medium and larger screens -->
+                                    <a href="#notdienst"
+                                        class="hidden md:inline-block bg-[#262C5D] text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700">
+                                        Termin vereinbaren
+                                    </a>
+                                
+                                    <!-- "Termin" - Visible only on small screens -->
+                                    <a href="#notdienst"
+                                        class="block md:hidden bg-[#262C5D] text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700">
+                                        Termin
+                                    </a>
+                                
+                                    <!-- "Senden" - Always visible -->
+                                    <a href="#notdienst"
+                                        class="bg-[#262C5D] text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700">
+                                        Senden
+                                    </a>
+                                </div>                                
                         </form>
                     </div>
                 </div>
@@ -474,11 +483,8 @@
             <div class="absolute bottom-0 w-full h-20 bg-gradient-to-b from-gray-100 to-white"></div>
         </section>
 
-
-
-
-        <section itemscope itemtype="https://schema.org/FAQPage" class="py-10">
-            <div class="bg-white py-10">
+        <section itemscope itemtype="https://schema.org/FAQPage" class="py-5 md:py-10">
+            <div class="bg-white">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <h2 class="text-4xl font-semibold text-[#262C5D]">FAQs</h2>
                     <p class="text-gray-600 mb-8 mt-4 text-lg">
@@ -591,7 +597,7 @@
                 <!-- Flex Container für Footer-Inhalte -->
                 <div class="flex flex-col md:flex-row md:justify-between space-y-8 md:space-y-0">
                     <!-- Contact Card -->
-                    <div class="bg-white p-6 rounded-xl shadow-md flex-1 mr-6">
+                    <div class="bg-white p-6 rounded-xl shadow-md flex-1 md:mr-6">
                         <div class="flex items-center space-x-2 mb-5">
                             <img src="img/Logo/Logo in Farbe komplett.png" alt="Logo"
                                 class="w-64 h-auto max-w-full max-h-40">
@@ -622,7 +628,7 @@
                     </div>
 
                     <!-- Call to Action Button -->
-                    <div class="flex flex-col justify-center items-start md:items-center md:justify-center flex-1">
+                    <div class="flex flex-col justify-center items-center md:justify-center flex-1">
                         <p class="text-gray-600 mb-4 text-center md:text-left">Class aptent taciti sociosqu ad litora
                             torquent per conubia nostra, per inceptos himenaeos. Nullam ornare nunc a mauris euismod, in
                             sollicitudin turpis placerat.</p>
@@ -632,7 +638,7 @@
                     </div>
 
                     <!-- Links -->
-                    <div class="flex-1 flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-16">
+                    <div class="md:flex-1 flex justify-center md:justify-normal space-x-16">
                         <div>
                             <p class="text-lg font-semibold text-[#262C5D]">Quick Links</p>
                             <ul class="mt-4 space-y-2">
