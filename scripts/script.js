@@ -32,9 +32,40 @@ $(document).ready(function () {
     // Neu berechnen, falls Fenstergröße oder Inhalt sich ändert
     $(window).on('resize', setInfoBannerHeight);
 
-    // Toggle mobile menu
-    $('#menu-toggle').on('click', function () {
-        $('#mobile-menu').toggleClass('hidden');
+
+
+    // Funktion, um das Menü zu öffnen und den Banner auszublenden
+    function openMenu() {
+        $('#mobile-menu').removeClass('hidden');
+        $('#info-banner').addClass('hidden');
+    }
+
+    // Funktion, um das Menü zu schließen und den Banner wieder einzublenden
+    function closeMenu() {
+        $('#mobile-menu').addClass('hidden');
+        $('#info-banner').removeClass('hidden');
+    }
+
+    // Burger-Button Klick-Event
+    $('#menu-toggle').on('click', function() {
+        if ($('#mobile-menu').hasClass('hidden')) {
+            openMenu();
+        } else {
+            closeMenu();
+        }
+    });
+
+    // Schließen-Button im mobilen Menü
+    $('#menu-toggle2').on('click', function() {
+        closeMenu();
+    });
+
+    // Banner anzeigen, wenn der Bildschirm auf Desktop-Größe erweitert wird
+    $(window).on('resize', function() {
+        if ($(window).width() >= 768) { // 768px ist die Grenze für 'md'
+            $('#info-banner').removeClass('hidden');
+            $('#mobile-menu').addClass('hidden');
+        }
     });
 
 
@@ -52,13 +83,6 @@ $(document).ready(function () {
         $('.faq-toggle').not(toggleSymbol).text('+');
     });
 
-
-
-    
-    // Mobile Menu Toggle
-    $('#menu-toggle').on('click', function() {
-        $('#mobile-menu').toggleClass('hidden');
-    });
 
     // Swiper Slider
     const swiper = new Swiper('.swiper', {

@@ -72,25 +72,38 @@
             </div>
 
             <!-- Mobile Menu -->
-            <div id="mobile-menu" class="hidden md:hidden absolute top-12 left-0 w-full bg-white py-4 px-6">
-                <a href="#" class="block py-2 hover:text-blue-600">Leistungen</a>
-                <a href="#" class="block py-2 hover:text-blue-600">Galerie</a>
-                <a href="#" class="block py-2 hover:text-blue-600">Team</a>
-                <a href="#" class="block py-2 hover:text-blue-600">Kontakt</a>
+            <div id="mobile-menu" class="hidden md:hidden fixed inset-0 bg-white z-50 flex flex-col items-center justify-center space-y-4">
+                <!-- Close Button (X) -->
+                <button id="menu-toggle2" class="absolute top-4 right-4 text-gray-700">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+
+                <!-- Menu Links -->
+                <a href="#" class="text-lg py-2 hover:text-blue-600">Leistungen</a>
+                <a href="#" class="text-lg py-2 hover:text-blue-600">Galerie</a>
+                <a href="#" class="text-lg py-2 hover:text-blue-600">Team</a>
+                <a href="#" class="text-lg py-2 hover:text-blue-600">Kontakt</a>
+
                 <!-- Telefon Icon im Burger-Menü -->
-                <a href="tel:+1234567890" class="block py-2 hover:text-blue-600">
+                <a href="tel:+1234567890" class="text-lg py-2 hover:text-blue-600 flex items-center">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor" class="w-6 h-6 inline-block text-gray-700">
+                        stroke="currentColor" class="w-6 h-6 inline-block text-gray-700 mr-2">
                         <path stroke-linecap="round" stroke-linejoin="round"
                             d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
                     </svg>
+                    Anrufen
                 </a>
-                <a href="/" class="hover:text-blue-600 block py-2">
+
+                <!-- Kalender Icon im Burger-Menü -->
+                <a href="/" class="text-lg py-2 hover:text-blue-600 flex items-center">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor" class="size-6">
+                        stroke="currentColor" class="w-6 h-6 inline-block text-gray-700 mr-2">
                         <path stroke-linecap="round" stroke-linejoin="round"
                             d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z" />
                     </svg>
+                    Kalender
                 </a>
             </div>
         </div>
@@ -190,7 +203,7 @@
                             perfekte Mundhygiene aussieht.
                         </p>
                     </div>
-                    <div class="flex-1 flex order-1 md:order-2 justify-center items-center p-8">
+                    <div class="flex-1 flex order-1 md:order-2 justify-center items-center">
                         <img-comparison-slider class="shadow-lg rounded-xl shadow-slate-600">
                             <img class="rounded-lg max-h-[24rem]" slot="first" src="img/Behandlungsfaelle/Flg AM.png" />
                             <img class="rounded-lg max-h-[24rem]" slot="second" src="img/Behandlungsfaelle/Flg Comp.png" />
@@ -329,13 +342,13 @@
                 <div class="swiper-wrapper">
                     <!-- Slides -->
                     <div class="swiper-slide rounded-lg"><img src="img/Behandlungszimmer/IMG_4766.jpg"
-                            alt="Praxis Bild 1" class="w-full h-[500px] object-cover rounded-lg shadow-md ">
+                            alt="Praxis Bild 1" class="w-full max-h-[500px] object-cover rounded-lg shadow-md ">
                         <p class="pt-6 pb-8 text-center text-gray-600">Das ist ein Bild aus unserer Praxis. Einer unserer tollen Behandlungszimmer!</p></div>
                     <div class="swiper-slide rounded-lg"><img src="img/Bilder Shooting/IMG_5013.jpg" alt="Praxis Bild 2"
-                            class="w-full h-[500px] object-cover rounded-lg shadow-md">
+                            class="w-full max-h-[500px] object-cover rounded-lg shadow-md">
                             <p class="pt-6 pb-8 text-center text-gray-600">Ein Bild, welches die aktive Behandlung an einem Patienten zeigt.</p></div>
                     <div class="swiper-slide rounded-lg"><img src="img/Bilder Shooting/IMG_4947.jpg" alt="Praxis Bild 3"
-                            class="w-full h-[500px] object-cover rounded-lg shadow-md">
+                            class="w-full max-h-[500px] object-cover rounded-lg shadow-md">
                             <p class="pt-6 pb-8 text-center text-gray-600">Unsere Artzhelferinnen empfangen Sie gleich am Eingang.</p></div>
                     
                 </div>
@@ -343,8 +356,8 @@
                 <div class="swiper-pagination"></div>
 
                 <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
+                <!--<div class="swiper-button-prev hidden"></div>
+                <div class="swiper-button-next hidden"></div>-->
 
                 <!-- If we need scrollbar -->
                 <!--<div class="swiper-scrollbar"></div>-->
